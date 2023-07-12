@@ -1,0 +1,37 @@
+<div class="card">
+    <img src="../../assets/petscare.jpg">
+</div>
+<br><br>
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+            <h1 class="card-title">SCHEDULE YOUR PETSJD CARE SERVICE ONLINE</h1><br>
+            <p>At PetsJD care, we understand and appreciate your urban DC lifestyle – you may travel frequently or manage a busy schedule.</p><br>
+            <p>We’ve made it easy for you to give your pets the individual attention they deserve and require by offering convenient automated online scheduling 24/7/365. We even have recurring service incentives with no additional fees or surcharges.</p>
+        </div>
+
+        <div class="col-4">
+            <form>
+                <div class="mb-3 mt-3" >
+                  <input type="text" class="form-control" name="user" id="name" placeholder="Your Name" [(ngModel)]="user">
+                </div>
+                <div class="mb-3">
+                  <input type="email" class="form-control"name="email" id="email" placeholder="Your Email" [(ngModel)]="email">
+                </div>
+                <div class="mb-3">
+                    <input type="number" class="form-control" name="num" id="pnum" placeholder="Your Phone Number" [(ngModel)]="num">
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" name="pcode" id="zcode" placeholder="Pincode" [(ngModel)]="pcode">
+                </div>
+                <div class="mb-3">
+                    <label for="msg">Message</label> 
+                    <textarea class="form-control" id="msg" name="msg" [(ngModel)]="msg"></textarea> 
+                </div>
+                <button type="submit" class="btn btn-primary" (click)="service()">Submit</button>
+              </form>
+        </div>
+    </div>
+
+
+</div>

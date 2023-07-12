@@ -1,0 +1,62 @@
+<div class="card" style="border: none;">
+<img src="../../assets/dog28.jpg" style="width: 337px; height: 300px;" class=" rounded mx-auto d-block ">
+</div>
+<div class="container">
+<div>
+    <h1 style="text-align: center;">DROP US A LINE</h1>
+</div><br><br>
+<div>
+    <p style="text-align: center; font-size: 30px; font-weight: bolder;">YOUR CARE WANT TO HEAR FROM YOU! LET US KNOW IF YOU HAVE ANY QUESTIONS OR CONCERNS AND WE’LL GET BACK TO YOU AS SOON AS WE CAN.</p>
+</div>
+<br><br>
+
+<div class="row">
+    <div class="col-4">
+        <h2>MOBILE NUMBER</h2>
+        <p>+91 9791371137</p>
+
+        <h2>ADDRESS</h2>
+        <p>119/A G.S.T Road xxx yyyy zzz<br>
+            603001
+        </p>
+    </div>
+
+    <div class="col-4">
+        <form>
+            <div class="mb-3">
+                <input type="text" class="form-control" name="user" id="name" placeholder="Your Name" [(ngModel)]="user" >
+            </div><br>
+            <div class="mb-3">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" [(ngModel)]="email">
+            </div><br>
+            <div class="mb-3">
+                <input type="number" class="form-control"  name="pcode" id="pcode" placeholder="Pin Code" [(ngModel)]="pcode">
+            </div>
+        </form>
+    </div>
+
+    <div class="col-4">
+        <form>
+            <div class="mb-3">
+                <input type="text" class="form-control" name="user1" id="name" placeholder="Last Name" [(ngModel)]="user1">
+            </div><br>
+            <div class="mb-3">
+                <input type="number" class="form-control" name="pnum" id="number" placeholder="Your Phone Number"[(ngModel)]="pnum">
+            </div>
+        </form>
+    </div>
+    <div class="col-4"></div>
+
+    <div class="col-8">
+        <form>
+            <label for="msg" style="font-weight: bolder;">Message</label>
+            <textarea class="form-control" id="msg" name="msg" style="height: 200px;" [(ngModel)]="msg"></textarea><br>
+
+            <button type="submit" class="btn btn-primary" style="width:860px;" (click)="service()">Submit</button>
+        </form>
+        
+    </div>
+    
+    
+</div>
+</div><br>
